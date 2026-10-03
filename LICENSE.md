@@ -21,7 +21,6 @@ You may NOT:
 - Modify, rebrand, or redistribute the Software under a different name or without attribution. Any public distribution of the Software binaries must link directly to the official repository:
   `https://github.com/izzetyarali-arch/Source2PortTools`
 - Bundle the Software into paid asset packs, commercial subscription services, or proprietary distributions without explicit written consent from the author.
-- Use the Software to port **Skibidi Toilet** content. The Software stops when it detects such content; attempting to bypass this restriction is also prohibited.
 
 ### 3. Third-Party Content & Intellectual Property
 The Software is an automated file conversion utility. All intellectual property, trademarks, and copyrights belonging to Valve Corporation or third-party creators (including Source 1 game assets, Garry's Mod Workshop items, textures, models, and audio) remain the exclusive property of their respective owners. Users are solely responsible for ensuring they possess the appropriate legal rights and permissions before porting and publishing third-party assets.
