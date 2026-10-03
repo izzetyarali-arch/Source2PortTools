@@ -1,0 +1,7 @@
+# The program itself is published as a release .zip; the repository holds only these
+/*
+!/.gitignore
+!/README.md
+!/LICENSE.md
+!/.github/
+!/docs/

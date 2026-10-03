@@ -1,0 +1,74 @@
+name: "🐞 Hata Bildir / Bug Report"
+description: "Bir şey bozuk mu çıktı, program mı çöktü? Buradan bildir. / Something converted wrong or crashed?"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Raporun ne kadar detaylıysa o kadar hızlı düzeltiriz. **Log dosyasını eklemeyi unutma!**
+        *The more detail, the faster the fix. **Don't forget the log file!***
+
+  - type: input
+    id: version
+    attributes:
+      label: "Program sürümü / Version"
+      description: "İndirdiğin zip'in adındaki sürüm. / The version in the zip name."
+      placeholder: "1.0.0-beta.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Sorun nerede? / What's affected?"
+      multiple: true
+      options:
+        - "Model (.mdl → .vmdl)"
+        - "Doku / Texture (.vtf)"
+        - "Materyal / Material (.vmt → .vmat)"
+        - "Partikül / Particle (.pcf)"
+        - "Harita / Map (.bsp → .vmap)"
+        - "Skybox"
+        - "Ses / Sound"
+        - "Program çöktü / Crash"
+        - "Arayüz / UI"
+        - "Diğer / Other"
+    validations:
+      required: true
+
+  - type: input
+    id: game
+    attributes:
+      label: "Hangi oyun / içerik? / Source game"
+      placeholder: "Black Mesa, HL2, L4D2, GMod addon..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: "Ne oldu? / What happened?"
+      description: "Ne yaptın, ne bekliyordun, ne çıktı? Sorunlu dosyanın adını/yolunu yaz. / What did you do, what did you expect, what did you get? Name the file."
+      placeholder: |
+        models/humans/scientist.mdl portladım, Alyx'te modelin yüzü mor/siyah görünüyor.
+    validations:
+      required: true
+
+  - type: textarea
+    id: log
+    attributes:
+      label: "Log dosyası / Log file"
+      description: |
+        Programın yanındaki `logs` klasöründen son `Islem_Kaydi_....txt` dosyasını buraya **sürükle-bırak**.
+        Program çöktüyse `crash` klasöründeki raporu da ekle.
+        *Drag & drop the latest `logs/Islem_Kaydi_....txt` here (and the `crash` report if it crashed).*
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Ekran görüntüsü / Screenshots"
+      description: "Varsa ekran görüntüsü ya da video sürükle-bırak. / Drag & drop screenshots or a video."
+    validations:
+      required: false
