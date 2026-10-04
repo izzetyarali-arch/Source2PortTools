@@ -41,6 +41,7 @@ No external tools needed: no Crowbar, Blender or VTFEdit. Everything runs inside
 - **Direct material compiling:** most materials and their textures are written straight to `.vmat_c` / `.vtex_c` without waiting for resourcecompiler. The first material of an unknown kind goes through resourcecompiler once; the same kind after it is compiled directly.
 - **GPU texture compression:** BC7 compression runs on the graphics card (Direct3D 11 compute shaders).
 - **PBR material generation:** Source 1 shaders (`VertexLitGeneric`, `LightmappedGeneric`, `EyeRefract` and more) become Source 2 PBR materials. Normal, roughness, metalness and AO maps are generated, optionally with a trained AI model, and textures can be upscaled by an AI upscaler.
+- **Built-in AI:** a small neural network (about 5.8 million parameters) trained from scratch for this program helps the port along: texture upscaling and cleanup, PBR maps, surface types and wrinkle maps. It runs locally on the CPU or GPU, with no internet connection and no third-party model.
 - **Parallel by design:** conversion runs on every core; models compile in parallel resourcecompiler processes while materials are still compiling.
 
 ---
