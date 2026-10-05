@@ -8,6 +8,11 @@
   Ports Source 1 models, textures, materials, particles, sounds and maps to <b>Source 2</b> (Half-Life: Alyx / S2FM) in one click.
 </p>
 
+> [!WARNING]
+> **v1.0.0 has been withdrawn.** A fixed v1.1.0 is coming soon. Please don't redistribute v1.0.0.
+>
+> **v1.0.0 yayından kaldırıldı.** Düzeltilmiş v1.1.0 yakında geliyor. Lütfen v1.0.0'ı paylaşmayın.
+
 <p align="center">
   <a href="https://github.com/izzetyarali-arch/Source2PortTools/releases/latest"><b>⬇ Download</b></a> ·
   <a href="https://discord.gg/TnfQdnaF7g"><b>💬 Discord</b></a> ·
